@@ -21,3 +21,35 @@
 h4 {
   font-style: italic;
 }
+
+input {
+  width: 100px;
+  height: 25px;
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+}
+
+section {
+  margin: 5px;
+  padding: 5px;
+}
+
+.welcomeDiv {
+  margin: auto;
+  height: 50px;
+  line-height: 50px;
+  width: 300px;
+  text-align: center;
+  color: beige;
+  background-color: rgb(105, 26, 26);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.welcomeDiv:hover {
+  background-color: rgb(169, 14, 14);
+}
