@@ -12,6 +12,7 @@ import UserFeeling from '../UserFeeling/UserFeeling';
 import UserUnderstanding from '../UserUnderstanding/UserUnderstanding';
 import UserSupport from './UserSupport/UserSupport';
 import UserComment from '../UserComment/UserComment';
+import Review from '../Review/Review';
 
 function App() {
 
@@ -25,14 +26,17 @@ function App() {
         <Route exact path='/feeling'>
           <UserFeeling />
         </Route>
-        <Route exact path ='/understanding'>
+        <Route exact path='/understanding'>
           <UserUnderstanding />
         </Route>
         <Route exact path='/support'>
           <UserSupport />
         </Route>
         <Route exact path='/comment'>
-        <UserComment />
+          <UserComment />
+        </Route>
+        <Route exact path='/review'>
+          <Review />
         </Route>
       </Router>
     </div>
