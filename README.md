@@ -1,9 +1,15 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+The Feedback Submitting Thing 
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This project gathers feedback from the user, a 1-5 value for:
+ - How a user is feeling
+ - Material Understanding
+ - Level of Support
+ - As well as a general text field for 'comments'. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+After feedback is gathered, it is displayed on a new page where a user can review and submit to the database.
+
+Once submission is complete the user receives confirmation and has an option to create another feedback form.
