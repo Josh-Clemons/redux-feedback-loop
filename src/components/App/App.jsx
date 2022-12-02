@@ -1,9 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { useState, useEffect } from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
 import Header from '../Header/Header'
@@ -13,6 +11,7 @@ import UserUnderstanding from '../UserUnderstanding/UserUnderstanding';
 import UserSupport from './UserSupport/UserSupport';
 import UserComment from '../UserComment/UserComment';
 import Review from '../Review/Review';
+import SubmitConfirmation from '../SubmitConfirmation/SubmitConfirmation';
 
 function App() {
 
@@ -37,6 +36,9 @@ function App() {
         </Route>
         <Route exact path='/review'>
           <Review />
+        </Route>
+        <Route exact path='/confirmation'>
+          <SubmitConfirmation />
         </Route>
       </Router>
     </div>
