@@ -7,6 +7,6 @@ export default function Welcome () {
     const handleClick = () => {history.push('/feeling')}
 
     return (
-        <div onClick={handleClick}>Click here to leave feedback!</div>
+        <div className="welcomeDiv" onClick={handleClick}>Click here to leave feedback!</div>
     )
 }
