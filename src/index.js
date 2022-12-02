@@ -9,21 +9,21 @@ import registerServiceWorker from './registerServiceWorker';
 
 // Redux Reducers below, used for holding different feedback info
 
-const userFeeling = (state = 0, action) => {
+const userFeeling = (state = '', action) => {
     if (action.type === 'UPDATE_FEELING') {
         return state = action.payload;
     }
     return state;
 }
 
-const userUnderstanding = (state = 0, action) => {
+const userUnderstanding = (state = '', action) => {
     if (action.type === 'UPDATE_UNDERSTANDING') {
         return state = action.payload;
     }
     return state;
 }
 
-const userSupport = (state = 0, action) => {
+const userSupport = (state = '', action) => {
     if (action.type === 'UPDATE_SUPPORT') {
         return state = action.payload;
     }
