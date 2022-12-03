@@ -8,6 +8,7 @@ export default function Review() {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    // feedback object that is getting sent to DB
     const combinedFeedback = {
         feeling: store.userFeeling,
         understanding: store.userUnderstanding,
@@ -15,6 +16,7 @@ export default function Review() {
         comments: store.userComment
     }
 
+    // after submit button clicked, POST executed and dispatch to clear state
     const handleClick = () => {
         axios.post('/feedback', combinedFeedback).then((response) => {
             console.log('success POSTING', response);
@@ -27,15 +29,15 @@ export default function Review() {
         })
     }
 
-return (
-    <div>
-        <h2>Review Your Feedback</h2>
-        <br />
-        <section>Feelings: {store.userFeeling}</section>
-        <section>Understanding: {store.userUnderstanding}</section>
-        <section>Support: {store.userSupport}</section>
-        <section>Comments: {store.userComment}</section>
-        <button onClick={handleClick}>SUBMIT</button>
-    </div>
-)
+    return (
+        <div>
+            <h2>Review Your Feedback</h2>
+            <br />
+            <section>Feelings: {store.userFeeling}</section>
+            <section>Understanding: {store.userUnderstanding}</section>
+            <section>Support: {store.userSupport}</section>
+            <section>Comments: {store.userComment}</section>
+            <button onClick={handleClick}>SUBMIT</button>
+        </div>
+    )
 }

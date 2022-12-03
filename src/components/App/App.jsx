@@ -8,7 +8,7 @@ import Header from '../Header/Header'
 import Welcome from '../Welcome/Welcome';
 import UserFeeling from '../UserFeeling/UserFeeling';
 import UserUnderstanding from '../UserUnderstanding/UserUnderstanding';
-import UserSupport from './UserSupport/UserSupport';
+import UserSupport from '../UserSupport/UserSupport';
 import UserComment from '../UserComment/UserComment';
 import Review from '../Review/Review';
 import SubmitConfirmation from '../SubmitConfirmation/SubmitConfirmation';

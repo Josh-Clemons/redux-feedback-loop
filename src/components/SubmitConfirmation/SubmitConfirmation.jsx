@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom';
 
-export default function SubmitConfirmation () {
+// Component confirms for user the submission was successful and provides option to take another survey.
+export default function SubmitConfirmation() {
     const history = useHistory();
 
     const handleClick = () => {
